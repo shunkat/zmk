@@ -1,0 +1,19 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                // オリジナルのキーマップをカスタマイズした設定に変更
+                &kp TAB       &none       &kp W    &kp E     &kp R     &kp T     &kp MB2          &none     &kp P     &kp O     &kp LBKT  &kp BSPC
+                &kp CAPS      &kp A       &kp S    &kp D     &kp F     &kp G     &kp PSCRN       &kp J     &kp H     &kp K     &kp SEMI  &kp L
+                &kp Q        &kp Z       &kp X    &kp C     &kp V     &kp B     &kp B            &kp M     &kp N     &kp M     &kp SLASH &kp ESC
+                &kp CAPS     &kp LGUI    &kp LALT &kp SPACE &kp RET   &kp RALT  &kp RGUI         &kp RCTRL
+            >;
+        };
+    };
+};

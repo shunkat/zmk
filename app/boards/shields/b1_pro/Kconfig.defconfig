@@ -1,0 +1,6 @@
+if SHIELD_B1_PRO
+
+config ZMK_KEYBOARD_NAME
+    default "B1 Pro"
+
+endif
